@@ -22,7 +22,7 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 		});
 
 		//remove hashes from urls -> clean presentation of url
-		// $locationProvider.html5mode(true);
+		$locationProvider.html5Mode(true);
 });
 
 //export app for import into index.js file
