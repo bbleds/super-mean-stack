@@ -10,7 +10,18 @@ let PORT = process.env.PORT || 3000;
 
 //catch all route
 app.all("/*", (req, res)=>{
-	res.status(200).send(`<h1>Oops, that page isnt available! Try to enter it again or refresh the page.</h1><script src="bundle.js"></script>`);
+	res.status(200).send(`<!DOCTYPE html>\
+								 <html>\
+								 	<head>\
+								 		<title>Mean To Do List App</title>\
+								 		<base href="/">\
+								 	<head>\
+								 	<body>\
+								 		<div ui-view></div>\
+								 		<script src="bundle.js"></script>\
+								 	</body>\
+								 <html>\
+							`);
 });
 
 //listen on port
