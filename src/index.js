@@ -1,3 +1,8 @@
-const message = `Hello from the entry file`;
+import angular from 'angular';
+import appModule from 'config';
 
-console.log(message);
+//attach angular module to document in html
+angular.bootstrap(document, [appModule.name]);
+
+
+

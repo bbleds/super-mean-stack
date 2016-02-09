@@ -2,12 +2,15 @@
 
 const express = require("express");
 const app = express();
+const path = require("path");
 
 let PORT = process.env.PORT || 3000;
 
+// app.use(express.static(path.join(__dirname, '/public')));
+
 //catch all route
 app.all("/*", (req, res)=>{
-	res.status(404).send(`<h1>Oops, that page isnt available! Try to enter it again or refresh the page.</h1><script src="bundle.js"></script>`);
+	res.status(200).send(`<h1>Oops, that page isnt available! Try to enter it again or refresh the page.</h1><script src="bundle.js"></script>`);
 });
 
 //listen on port
