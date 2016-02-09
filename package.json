@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bbleds/super-mean-stack/issues"
   },
-  "homepage": "https://github.com/bbleds/super-mean-stack#readme"
+  "homepage": "https://github.com/bbleds/super-mean-stack#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
