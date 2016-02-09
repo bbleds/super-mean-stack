@@ -4,7 +4,8 @@
   "description": "A MEAN stack app with Angular, Node/Express, Webpack, MongoDB, SASS, Babel/ES6, Bootstrap",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_PATH=$NODE_PATH:./src node server.js",
+    "dev": "npm start & webpack-dev-server --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,13 @@
   },
   "homepage": "https://github.com/bbleds/super-mean-stack#readme",
   "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
     "express": "^4.13.4"
   },
   "devDependencies": {
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   }

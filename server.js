@@ -7,7 +7,7 @@ let PORT = process.env.PORT || 3000;
 
 //catch all route
 app.all("/*", (req, res)=>{
-	res.status(404).send(`<h1>Oops, that page isnt available! Try to enter it again or refresh the page.</h1>`);
+	res.status(404).send(`<h1>Oops, that page isnt available! Try to enter it again or refresh the page.</h1><script src="bundle.js"></script>`);
 });
 
 //listen on port
