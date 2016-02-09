@@ -18,5 +18,9 @@
   "homepage": "https://github.com/bbleds/super-mean-stack#readme",
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
   }
 }
